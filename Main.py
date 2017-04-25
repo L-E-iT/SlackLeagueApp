@@ -8,11 +8,11 @@ ASSETS_DIR = os.path.dirname(os.path.abspath())
 
 app = Flask(__name__)
 
-SLACK_WEBHOOK_SECRET = "ULs9LTwlPrVTUP8CkTZYPuH1"
+SLACK_WEBHOOK_SECRET = ""
 
-slack = Slacker("xoxb-171642061520-h7f1IZCj3b69JxL7JagsjMfN")
+slack = Slacker("")
 riotapi.set_region("NA")
-riotapi.set_api_key("RGAPI-84f4a9e5-b6fd-493e-9786-0ccfde1147d4")
+riotapi.set_api_key("")
 
 summoner = riotapi.get_summoner_by_name("TheBranHammer")
 # print("{name} is a level {level} summoner on the NA server.".format(name=summoner.name, level=summoner.level))
