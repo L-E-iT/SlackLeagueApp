@@ -3,7 +3,9 @@ A Slack app that gives some details about players League of Legends accounts
 
 ## Requirements
 Cassiopeia Python Library
+
 Slacker Python Library
+
 Flask Python Framework
 
 ## Notes
