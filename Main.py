@@ -53,7 +53,6 @@ def winrate():
             rank        = riotapi.get_league_entries_by_summoner(summoner)
             winrate    = (int(rank[0].entries[0].wins)/(int(rank[0].entries[0].wins) + int(rank[0].entries[0].losses)))
             message     = str(text) + " has a ranked winrate of " + "{0:.0%}".format(winrate)
-            print(message)
             send_message(channel,message)
         return Response(),200
     except Exception as e:
